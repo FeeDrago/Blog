@@ -39,7 +39,8 @@
 
         <!-- Comments Area -->
         <!-- TODO: Add a CKEditor for commenting below -->
-            {{ ckeditor.load() }} {{ ckeditor.config(name='body') }}
+            {{ ckeditor.load() }}
+            {{ ckeditor.config(name='body') }}
             {{ render_form(form, novalidate=True, button_map={"submit": "primary"}) }}
         <div class="comment">
           <!-- TODO: Show all the comments on a post -->
